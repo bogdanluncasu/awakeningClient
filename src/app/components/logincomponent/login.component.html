@@ -1,0 +1,17 @@
+<form id = "container--login" (ngSubmit)="login()" >
+    <h1>Log In</h1>
+    <div id="error" ><p>{{errorMessage}}</p></div>
+    <h3>Email:</h3>
+    <input [(ngModel)]="user.email" placeholder="@email.com" name="email" />
+    <h3>Password:</h3>
+    <div id="password">
+        <input [(ngModel)]="user.password" type="password" name="password"/>
+    </div>
+
+    <label><input id="rememberme" name="rememberme" value="remember" type="checkbox" /><p> &nbsp;Remember me</p></label>
+    <a routerLink="/forgot-password">Forgot password?</a>
+    <a routerLink="/register">Do not have an account? <br>Register here. </a>
+    <input type="submit"  value="Log In"/>
+
+</form>
+

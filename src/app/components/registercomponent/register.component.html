@@ -1,0 +1,26 @@
+<form id = "container--login" (ngSubmit)="register()" >
+    <h1>Log In</h1>
+    <div class="error" ><p>{{errorMessage}}</p></div>
+    <h3>First name:</h3>
+    <input placeholder="First Name" [(ngModel)]="user.firstName" name="firstName" (ngModelChange)="onPropertyChange()"/>
+    <p *ngIf="!user.isNameValid(user.firstName)&&!isEmpty(user.firstName)" class="error">First Name should have only characters and spaces 
+        and at least 3 characters per name.</p>
+    <h3>Last name:</h3>
+    <input placeholder="Last Name" [(ngModel)]="user.lastName" name="lastName" (ngModelChange)="onPropertyChange()"/>
+    <p *ngIf="!user.isNameValid(user.lastName)&&!isEmpty(user.lastName)" class="error">Last Name should have only characters and spaces
+        and at least 3 characters per name.
+    </p>
+    <h3>Email:</h3>
+    <input placeholder="username@email.com" [(ngModel)]="user.email" name="email" (ngModelChange)="onPropertyChange()"/>
+    <p *ngIf="!user.isEmailValid()&&!isEmpty(user.email)" class="error">Email format is invalid.</p>
+    <h3>Password:</h3>
+    <div id="password">
+        <input type="password" [(ngModel)]="user.password" name="password" (ngModelChange)="onPropertyChange()"/>
+        <p *ngIf="!user.isPasswordValid()&&!isEmpty(user.password)" class="error">Password must contains at least one number, one capital letter and 6 characters length.</p>
+    </div>
+
+    <a routerLink="/login">Already have an account? <br>Login here. </a>
+    <input type="submit" value="Register"/>
+
+</form>
+

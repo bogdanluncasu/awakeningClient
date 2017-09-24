@@ -1,0 +1,89 @@
+.user-menu{
+    width: 1200px;
+    border-bottom: 1px solid rgba(147,112,219,.6);
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(27, 23, 23, 0.8);
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-side-rank,.right-side-rank{
+    display: flex;
+}
+
+.normal-nav-button,.user-rank{
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    padding: 6px 8px;
+    text-decoration: none;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.normal-nav-button:hover{
+    opacity: .2;
+}
+.user-rank{
+    opacity: .8;
+    cursor: unset;
+    width: fit-content;
+    background: rgba(27, 23, 23, 1);
+    border-radius: 50%;
+	width: 180px;
+    height: 180px;
+    position: absolute;
+    top:-90px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.user-rank .rank{
+    position: relative;
+    top:50%;
+    text-align: center;
+}
+
+.map-image,.premium-image,.profile-image,.logout-image,.rank-image,.gold-image,.gem-image{
+    display: inline-block;
+    margin-right: 3px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 15px;
+    height: 15px;
+}
+
+.map-image{
+    background-image:url("/assets/commons/map.png");
+}
+
+@keyframes rotateCoin{
+    100%{
+        transform: rotateX(360deg);
+    }
+}
+
+.premium-image{
+    background-image:url("/assets/commons/premium.png");
+}
+
+.profile-image{
+    background-image:url("/assets/commons/profile.png");
+}
+
+.logout-image{
+    background-image:url("/assets/commons/logout.png");
+}
+
+.rank-image{
+    background-image:url("/assets/commons/rank.png");
+}
+
+.gold-image{
+    background-image:url("/assets/commons/gold.png");
+    animation: rotateCoin 3s infinite;
+}
+.gem-image{
+    background-image:url("/assets/commons/gem.png");
+}

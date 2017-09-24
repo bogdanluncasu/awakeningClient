@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+html{
+    background:url("./assets/commons/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body{
+    margin:0px;
+}
+
+input[type="submit"]{
+    cursor: pointer;
+}
+
+.snack-bar-custom{
+    background-color: rgba(147,112,219,.6);
+
+}
+.cdk-visually-hidden {
+    display: none;
+}
