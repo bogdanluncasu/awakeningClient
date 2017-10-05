@@ -15,6 +15,7 @@ import {MdSnackBarModule} from '@angular/material';
 import {routes} from './app.router';
 import { HttpModule } from "@angular/http";
 
+
 @NgModule({
   declarations: [
     AppComponent,

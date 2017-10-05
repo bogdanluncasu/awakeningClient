@@ -1,0 +1,227 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-github {
+    width: 30px;
+    height: 30px;
+    background-position: -5px -5px;
+}
+
+.sprite-gmail {
+    width: 30px;
+    height: 30px;
+    background-position: -45px -5px;
+}
+
+.sprite-image0000 {
+    width: 320px;
+    height: 240px;
+    background-position: -85px -5px;
+}
+
+.sprite-image0001 {
+    width: 320px;
+    height: 240px;
+    background-position: -415px -5px;
+}
+
+.sprite-image0002 {
+    width: 320px;
+    height: 240px;
+    background-position: -745px -5px;
+}
+
+.sprite-image0003 {
+    width: 320px;
+    height: 240px;
+    background-position: -1075px -5px;
+}
+
+.sprite-image0004 {
+    width: 320px;
+    height: 240px;
+    background-position: -5px -255px;
+}
+
+.sprite-image0005 {
+    width: 320px;
+    height: 240px;
+    background-position: -335px -255px;
+}
+
+.sprite-image0006 {
+    width: 320px;
+    height: 240px;
+    background-position: -665px -255px;
+}
+
+.sprite-image0007 {
+    width: 320px;
+    height: 240px;
+    background-position: -995px -255px;
+}
+
+.sprite-image0008 {
+    width: 320px;
+    height: 240px;
+    background-position: -5px -505px;
+}
+
+.sprite-image0009 {
+    width: 320px;
+    height: 240px;
+    background-position: -335px -505px;
+}
+
+.sprite-image0010 {
+    width: 320px;
+    height: 240px;
+    background-position: -665px -505px;
+}
+
+.sprite-image0011 {
+    width: 320px;
+    height: 240px;
+    background-position: -995px -505px;
+}
+
+.sprite-image0012 {
+    width: 320px;
+    height: 240px;
+    background-position: -5px -755px;
+}
+
+.sprite-image0013 {
+    width: 320px;
+    height: 240px;
+    background-position: -335px -755px;
+}
+
+.sprite-image0014 {
+    width: 320px;
+    height: 240px;
+    background-position: -665px -755px;
+}
+
+.sprite-image0015 {
+    width: 320px;
+    height: 240px;
+    background-position: -995px -755px;
+}
+
+.sprite-image0016 {
+    width: 320px;
+    height: 240px;
+    background-position: -5px -1005px;
+}
+
+.sprite-image0017 {
+    width: 320px;
+    height: 240px;
+    background-position: -335px -1005px;
+}
+
+.sprite-image0018 {
+    width: 320px;
+    height: 240px;
+    background-position: -665px -1005px;
+}
+
+.sprite-image0019 {
+    width: 320px;
+    height: 240px;
+    background-position: -995px -1005px;
+}
+
+.sprite-image0020 {
+    width: 320px;
+    height: 240px;
+    background-position: -5px -1255px;
+}
+
+.sprite-image0021 {
+    width: 320px;
+    height: 240px;
+    background-position: -335px -1255px;
+}
+
+.sprite-image0022 {
+    width: 320px;
+    height: 240px;
+    background-position: -665px -1255px;
+}
+
+.sprite-image0023 {
+    width: 320px;
+    height: 240px;
+    background-position: -995px -1255px;
+}
+
+.sprite-image0024 {
+    width: 320px;
+    height: 240px;
+    background-position: -1405px -5px;
+}
+
+.sprite-image0025 {
+    width: 320px;
+    height: 240px;
+    background-position: -1325px -255px;
+}
+
+.sprite-image0026 {
+    width: 320px;
+    height: 240px;
+    background-position: -1325px -505px;
+}
+
+.sprite-image0027 {
+    width: 320px;
+    height: 240px;
+    background-position: -1325px -755px;
+}
+
+.sprite-image0028 {
+    width: 320px;
+    height: 240px;
+    background-position: -1325px -1005px;
+}
+
+.sprite-image0029 {
+    width: 320px;
+    height: 240px;
+    background-position: -1325px -1255px;
+}
+
+.sprite-image0030 {
+    width: 320px;
+    height: 240px;
+    background-position: -5px -1505px;
+}
+
+.sprite-linkedin {
+    width: 30px;
+    height: 30px;
+    background-position: -1735px -5px;
+}
+
+.sprite-stackoverflow {
+    width: 30px;
+    height: 30px;
+    background-position: -1775px -5px;
+}
+
+.sprite-tumblr {
+    width: 30px;
+    height: 30px;
+    background-position: -1815px -5px;
+}
+
+.sprite-twitter {
+    width: 30px;
+    height: 30px;
+    background-position: -1855px -5px;
+}
