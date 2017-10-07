@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import * as CryptoJS from 'crypto-js';
 @Injectable()
 export class SecurityService{
-    baseUrl = "http://localhost:2643";
+    baseUrl = "https://awakeningserver.herokuapp.com";
     key = CryptoJS.enc.Utf8.parse('C510FA90B14ACB28');
     iv = CryptoJS.enc.Utf8.parse('C2BF524EC88BD208');
     options = {
