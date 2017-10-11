@@ -26,6 +26,11 @@ export class HomeComponent implements OnInit {
 
     
     preload() {   
+        this.game.load.spritesheet('progress', 'assets/game/loader.png', 37, 45, 18);
+        let progress = this.game.add.sprite(this.game.world.centerX,this.game.world.centerY, 'progress');
+        progress.anchor.setTo(.5);
+        this.game.load.setPreloadSprite(progress);
+
         this.game.load.spritesheet('castle', 'assets/game/castle/3.png',436,280);
         this.game.load.spritesheet('woodcutter', 'assets/game/wood/2.png',266,154);
         this.game.load.spritesheet('stone', 'assets/game/stone/2.png',634,312);    
