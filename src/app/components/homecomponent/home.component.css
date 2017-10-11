@@ -94,3 +94,8 @@
 .gem-image{
     background-image:url("/assets/commons/gem.png");
 }
+
+#wait{
+    width: 300px;
+    margin: 0 auto;
+}

@@ -19,25 +19,29 @@ export class HomeComponent implements OnInit {
         private router: Router,private snackBar: MdSnackBar){}
 
     game: Phaser.Game;
+
     ngOnInit(){
+        document.getElementById('gameWindow').style.display = "none";
+        document.getElementById('wait').style.display = "block";
         this.game = new Phaser.Game(1280, 720, Phaser.CANVAS, 'gameWindow', { preload: this.preload, create: this.create });
     }
 
-
-    
-    preload() {   
-        this.game.load.spritesheet('progress', 'assets/game/loader.png', 37, 45, 18);
-        let progress = this.game.add.sprite(this.game.world.centerX,this.game.world.centerY, 'progress');
-        progress.anchor.setTo(.5);
-        this.game.load.setPreloadSprite(progress);
-
-        this.game.load.spritesheet('castle', 'assets/game/castle/3.png',436,280);
-        this.game.load.spritesheet('woodcutter', 'assets/game/wood/2.png',266,154);
-        this.game.load.spritesheet('stone', 'assets/game/stone/2.png',634,312);    
-        this.game.load.image('background', 'assets/game/background.png');
-        this.game.load.image('iron', 'assets/game/iron/1.png');
+    preload() {  
+        this.game.load.spritesheet('castle', 'https://awakeningclient.herokuapp.com/assets/game/castle/3.png',436,280);
+        this.game.load.spritesheet('woodcutter', 'https://awakeningclient.herokuapp.com/assets/game/wood/2.png',266,154);
+        this.game.load.spritesheet('stone', 'https://awakeningclient.herokuapp.com/assets/game/stone/2.png',634,312);    
+        this.game.load.image('background', 'https://awakeningclient.herokuapp.com/assets/game/background.png');
+        this.game.load.image('iron', 'https://awakeningclient.herokuapp.com/assets/game/iron/1.png');
         //this.game.load.image('woodcutter' , 'assets/game/wood/1.png');    
         //this.game.load.image('castle','assets/game/castle/3.gif');
+
+        function loadComplete(game){
+            console.log(document.getElementById('gameWindow'));
+            document.getElementById('gameWindow').style.display = "block";
+            document.getElementById('wait').style.display = "none";
+        }
+
+        this.game.load.onLoadComplete.add(loadComplete,null,null,this.game);
         
     }
 
