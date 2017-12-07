@@ -27,11 +27,12 @@ export class HomeComponent implements OnInit {
     }
 
     preload() {  
-        this.game.load.spritesheet('castle', 'https://awakeningclient.herokuapp.com/assets/game/castle/3.png',436,280);
-        this.game.load.spritesheet('woodcutter', 'https://awakeningclient.herokuapp.com/assets/game/wood/2.png',266,154);
-        this.game.load.spritesheet('stone', 'https://awakeningclient.herokuapp.com/assets/game/stone/2.png',634,312);    
-        this.game.load.image('background', 'https://awakeningclient.herokuapp.com/assets/game/background.png');
-        this.game.load.image('iron', 'https://awakeningclient.herokuapp.com/assets/game/iron/1.png');
+        this.game.load.spritesheet('castle', '/assets/game/castle/3.png',436,280);
+        this.game.load.spritesheet('woodcutter', '/assets/game/wood/2.png',266,154);
+        this.game.load.spritesheet('stone', '/assets/game/stone/2.png',634,312);    
+        this.game.load.image('background', '/assets/game/background.png');
+        this.game.load.image('iron', '/assets/game/iron/1.png');
+        this.game.load.image('barracks', '/assets/game/barracks/2.png');
         //this.game.load.image('woodcutter' , 'assets/game/wood/1.png');    
         //this.game.load.image('castle','assets/game/castle/3.gif');
 
@@ -90,6 +91,8 @@ export class HomeComponent implements OnInit {
         stone.animations.add('cuttree',frames_stone);
         stone.animations.play('cuttree',15,true)
         addToggleMouseEventsLisener(stone,this.game);
+
+        this.game.add.image(724,428,'barracks');
 
     }
 
